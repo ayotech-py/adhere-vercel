@@ -1,0 +1,135 @@
+.doctor-feedback {
+  display: flex;
+  padding: 1% 15%;
+  gap: 5%;
+}
+
+.doctor-feedback main {
+  width: 25%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 0px 20px 0px;
+}
+
+.doctor-feedback aside {
+  width: 30%;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 20px 20px 20px;
+}
+
+.doctor-feedback p {
+  color: var(--Others-Dark-3, #575757);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.doctor-feedback .feedback-form .form-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.doctor-feedback .feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.doctor-feedback .rating-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.doctor-feedback .rating-form .rate {
+  text-align: center;
+}
+
+.doctor-feedback .feedback-form .form-div .form-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-div .comment input {
+  display: flex;
+  width: calc(100% - 18px);
+  height: 76px;
+  padding: 8px 9px;
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: flex-start;
+  border-radius: 4.17px;
+  border: 0px solid var(--Others-Medium, #d6d6d6);
+  background: var(--Others-Light, #f5f5f5);
+}
+
+.form-div .comment input::placeholder {
+  color: var(--Others-Medium, #d6d6d6);
+  font-family: Poppins;
+  font-size: 13.45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.816px; /* 125.024% */
+}
+
+.doctor-feedback .complain-success {
+  display: flex;
+  width: 30%;
+  padding: 0px 12px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.doctor-feedback .complain-success h2 {
+  color: var(--Others-Dark-3, #575757);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 24.053px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.doctor-feedback .complain-success p {
+  color: #808080;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .doctor-feedback {
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: column;
+  }
+  .doctor-feedback {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .doctor-feedback main {
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .doctor-feedback aside {
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .doctor-feedback .complain-success {
+    width: calc(100% - 24px);
+  }
+}

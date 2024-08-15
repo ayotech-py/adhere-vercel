@@ -1,0 +1,22 @@
+.Footer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Footer {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .Footer .desktop-nav-btn {
+    width: 100%;
+    border: none;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 0px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}

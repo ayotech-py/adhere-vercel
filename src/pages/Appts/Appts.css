@@ -1,0 +1,273 @@
+.appts {
+  display: flex;
+  padding: 1% 15%;
+  gap: 5%;
+}
+
+.appts main {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 0px 20px 0px;
+}
+
+.appts aside {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0px 20px 20px 20px;
+}
+
+.appts aside .heading h3 {
+  color: var(--Alt-Black, #333);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92.7%; /* 22.248px */
+}
+
+.appts aside .appt-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0px 15px;
+}
+
+.appts aside .appt-btns button {
+  display: flex;
+  padding: 12.8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 12.8px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 92.7%; /* 11.866px */
+  border: none;
+}
+
+.selected-appt {
+  background: var(--Main-1-Col-5, #00ae9a);
+  color: var(--Light-Light-2, #f2f2f2);
+}
+
+.unselected-appt {
+  background: var(--Main-1-Col-5, #f5f5f5);
+  color: var(--Light-Light-2, #5d656d);
+}
+
+.appts main .upcoming-appointment {
+  width: 80%;
+}
+
+.appts main .appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appts main .appointment-details {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.appts main .appointment-details .heading {
+  display: flex;
+  padding: 14px 18px;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+  background-color: #fafafa;
+}
+
+.appts main .appointment-details .heading p {
+  color: var(--Others-Abbey-2, #5d656d);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 137.5% */
+}
+
+.appts main .appointment-details .doctor-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.appts main .appointment-details .doctor-info .left-side {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.appts main .appointment-details .doctor-info .left-side .image {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.appts main .appointment-details .doctor-info .left-side .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.appts main .appointment-details .doctor-info .left-side p {
+  color: var(--Others-Abbey-2, #5d656d);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.appts main .appointment-details .doctor-info a {
+  color: var(--Main-1-Col-5, #00ae9a);
+  text-align: right;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124%; /* 17.36px */
+}
+
+.appts main .appointment-details .appt-hightlight,
+.appts main .appointment-details .appt-prep {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.appts main .appointment-details .appt-hightlight p span {
+  font-weight: bold;
+}
+
+.appts main .appointment-details .appt-hightlight p,
+.appts main .appointment-details .appt-prep p {
+  color: var(--Text-normal, #757575);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.appts main .appointment-details .appt-prep h3 {
+  color: var(--Text-normal, #757575);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.appts main .appointment-details .date-cancel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.appts main .appointment-details .date-cancel p {
+  color: var(--Text-light, #c3c3c3);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.appts main .appointment-details .date-cancel button {
+  display: flex;
+  padding: 3px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--Accent-colour-Error, #de4841);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+  border-radius: 360px;
+  background: #f6f6f6;
+  border: none;
+}
+
+.appts main .appointment-details .notice {
+  display: flex;
+  padding: 10px 24px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  background: rgba(235, 188, 70, 0.2);
+}
+
+.appts main .appointment-details .notice p {
+  color: var(--Text-normal, #757575);
+  font-family: Poppins;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.appts main .appointment-details .notice img {
+  width: 24px;
+  height: 24px;
+}
+
+.hide-aside {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .appts {
+    padding-left: 5px;
+    padding-right: 5px;
+    flex-direction: column;
+  }
+
+  .appts main {
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .appts aside {
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .appts main .upcoming-appointment {
+    width: 100%;
+  }
+
+  .appts aside .appt-btns {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0px 0px;
+  }
+
+  .appts aside .appt-btns button {
+    border-radius: 20px;
+    width: 100%;
+  }
+
+  .hide-aside {
+    display: none !important;
+  }
+}

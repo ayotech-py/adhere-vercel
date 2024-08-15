@@ -1,0 +1,229 @@
+.doctor-profile-page {
+  display: flex;
+  padding: 1% 15%;
+  gap: 5%;
+}
+
+.doctor-profile-page main {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0px 0px 20px 0px;
+}
+
+.doctor-profile-page aside {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0px 20px 20px 20px;
+}
+
+.doctor-profile-page aside .page-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.doctor-profile-page aside .page-title h3 {
+  color: var(--Alt-Black, #333);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92.7%; /* 25.956px */
+}
+
+.doctor-profile-page .home-search {
+  position: relative;
+}
+
+.doctor-profile-page .home-search input {
+  width: calc(100% - 65px);
+  padding: 18px 30px 18px 34px;
+  color: var(--Others-Abbey, #495057);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 120% */
+  border-radius: 4px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.doctor-profile-page .home-search input::placeholder {
+  color: var(--Accent-colour-Grey, var(--Nuetral-blue, #c3c9d0));
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16.8px; /* 120% */
+}
+
+.doctor-profile-page .home-search .icon {
+  position: absolute;
+  top: 20px;
+  left: 14px;
+}
+
+.doctor-profile-page .home-search .icon2 {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+}
+
+.doctor-profile-page .search-result .search-heading {
+  justify-content: flex-end;
+}
+
+.doctor-profile-page main .profile {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  gap: 36px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.doctor-profile-page .info .info-box {
+  display: flex;
+  padding: 12px 23px;
+  flex-direction: column;
+  align-items: center;
+  gap: 11.476px;
+  flex: 1 0 0;
+  border-radius: 9.994px;
+  background: #fff;
+  box-shadow: 0px 3.531px 25.851px 0px rgba(0, 0, 0, 0.1);
+  gap: 6.663px;
+  align-self: stretch;
+}
+
+.doctor-profile-page .info {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.doctor-profile-page .info .info-box h3 {
+  color: var(--Others-Abbey-2, #5d656d);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16.657px; /* 83.284% */
+}
+
+.doctor-profile-page .info .info-box p {
+  color: #999;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14.158px; /* 108.909% */
+}
+
+.doctor-profile-page .profile-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  align-self: stretch;
+  width: 70%;
+}
+
+.doctor-profile-page .profile-description h2 {
+  color: var(--Others-Abbey, #495057);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.doctor-profile-page .profile-description p {
+  color: var(--Others-Santas-Gray, #9599ad);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 137.5% */
+}
+
+.doctor-profile-page main .bottom-div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.doctor-profile-page main .button-div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  align-self: stretch;
+}
+
+.doctor-profile-page main .bottom-div .video-chat-div {
+  display: flex;
+  padding: 10px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: 8px;
+  background: rgba(0, 174, 154, 0.05);
+  cursor: pointer;
+}
+
+.doctor-profile-page main .bottom-div .video-chat-div p {
+  color: var(--Main-1-Col-5, #00ae9a);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (max-width: 768px) {
+  .doctor-profile-page {
+    display: flex;
+    padding: 10px 15px;
+    gap: 5px;
+  }
+  .doctor-profile-page main {
+    width: 100%;
+  }
+
+  .doctor-profile-page aside {
+    display: none;
+  }
+
+  .doctor-profile-page main .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0px;
+  }
+
+  .doctor-profile-page .info {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .doctor-profile-page .profile-description {
+    width: 100%;
+  }
+
+  .doctor-profile-page main .bottom-div {
+    width: 100%;
+  }
+}

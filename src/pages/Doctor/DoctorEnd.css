@@ -1,0 +1,57 @@
+.doctor-end {
+  padding-left: 40%;
+  padding-right: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.doctor-end .top-part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.doctor-end .call-icon {
+  width: 115px;
+  height: max-content;
+  object-fit: cover;
+}
+
+.doctor-end h3 {
+  color: var(--Others-Abbey-2, #5d656d);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25.59px; /* 127.952% */
+}
+
+.doctor-end p {
+  color: #999;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.doctor-end .bottom-part {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .doctor-end {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

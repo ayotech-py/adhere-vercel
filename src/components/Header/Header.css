@@ -1,0 +1,149 @@
+.header-container {
+  display: flex;
+  width: calc(100% - 80px);
+  padding: 25px 40px 16px 40px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.logo-container {
+  display: flex;
+  padding-top: 3px;
+  align-items: center;
+  gap: 1.116px;
+}
+
+.desktop-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.desktop-nav-btn {
+  display: flex;
+  padding: 15px 28px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 360px;
+  border: 1px solid #f0f0f0;
+}
+
+.nav-btn {
+  display: flex;
+  padding: 0px 8px;
+  justify-content: center;
+  align-items: center;
+  gap: 5.135px;
+  align-self: stretch;
+}
+
+.nav-label {
+  color: var(--Main-1-Col-5, #00ae9a);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  display: flex;
+  width: 297px;
+  height: 33px;
+  padding: 10px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--Text-10, #9e9e9e);
+  font-family: "Inter" sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 360px;
+  background: #fafafa;
+  border: none;
+}
+
+.search-bar img {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.user-profile-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-image {
+  border-radius: 44px;
+  object-fit: cover;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.user-details p {
+  color: #66707a;
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+}
+
+.user-details .user-id-copy {
+  display: flex;
+  align-items: center;
+  gap: 4.28px;
+}
+
+.user-details .user-id-copy p {
+  font-size: 11px;
+}
+
+.arrow-down {
+  display: flex;
+  width: 20.545px;
+  height: 20.545px;
+  padding: 1.883px;
+  justify-content: center;
+  align-items: center;
+  gap: 9.415px;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    width: calc(100% - 32px);
+    padding: 10px 16px;
+    background: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  .desktop-navigation,
+  .arrow-down,
+  .user-details {
+    display: none;
+  }
+
+  .nav-btn {
+    flex-direction: column;
+  }
+}
