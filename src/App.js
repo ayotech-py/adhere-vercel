@@ -9,6 +9,7 @@ import { DoctorEnd } from "./pages/Doctor/DoctorEnd";
 import { DoctorFeedback } from "./pages/Doctor/DoctorFeedback";
 import { Appts } from "./pages/Appts/Appts";
 import { Pharmacy } from "./pages/Pharmacy/Pharmacy";
+import { ViewPrescriptions } from "./pages/Pharmacy/ViewPrescriptions";
 
 function App() {
   return (
@@ -41,6 +42,10 @@ function App() {
         </Route>
         <Route path="/pharmacy/">
           <Route path="" element={<Layout children={<Pharmacy />} />} />
+          <Route
+            path="view-prescriptions"
+            element={<Layout children={<ViewPrescriptions />} />}
+          />
         </Route>
       </Routes>
     </BrowserRouter>

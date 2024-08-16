@@ -58,7 +58,7 @@ export default function Header() {
           <Link
             to={"/appointments"}
             className="nav-btn"
-            onClick={() => setActiveTab(1)}
+            onClick={() => setActiveTab(2)}
           >
             <ApptsIcon
               color={activeTab === 2 ? "#00AE9A" : "#9C9C9C"}
@@ -72,9 +72,9 @@ export default function Header() {
             </p>
           </Link>
           <Link
-            to={"/doctor"}
+            to={"/pharmacy"}
             className="nav-btn"
-            onClick={() => setActiveTab(1)}
+            onClick={() => setActiveTab(3)}
           >
             <PharmIcon
               color={activeTab === 3 ? "#00AE9A" : "#9C9C9C"}

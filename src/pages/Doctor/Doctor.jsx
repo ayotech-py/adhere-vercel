@@ -9,9 +9,6 @@ import listIcon from "../../images/listview.png";
 
 import doctorImage from "../../images/badge-image.jpg";
 import tickIcon from "../../images/green-tick.png";
-import leftIcon from "../../images/left-arrow.png";
-
-import longLeftIcon from "../../images/long-left-arrow.png";
 import starIcon from "../../images/star.png";
 
 export default function DoctorPage() {

@@ -1,0 +1,230 @@
+.pharmacy {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  padding: 1% 15%;
+  grid-gap: 10%;
+  background-color: #fafafa;
+}
+
+.pharmacy .left {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pharmacy .left .heading {
+  display: flex;
+  padding: 16px 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.pharmacy .left .heading h3 {
+  color: var(--Others-Abbey, #495057);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 92.7%; /* 18.54px */
+}
+
+.pharmacy .left .pharmacy-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.pharmacy .middle {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.pharmacy .pharmacy-outlet-list {
+  display: grid;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-gap: 12px;
+}
+
+.pharmacy .pharmacy-outlets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pharmacy .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.pharmacy .title h3 {
+  color: var(--Others-Manatee, #878a99);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124%; /* 19.84px */
+}
+
+.pharmacy .title p {
+  color: var(--Main-1-Col-5, #00ae9a);
+  text-align: right;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124%; /* 17.36px */
+}
+
+.pharmacy .middle .specialist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* .pharmacy .right .carousel {
+  display: flex;
+  flex-direction: column;
+} */
+
+.desktop {
+  display: flex !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+.middle .prescription-heading h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  flex: 1 0 0;
+  overflow: hidden;
+  color: var(--Others-Abbey-2, #5d656d);
+  text-overflow: ellipsis;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px; /* 122.222% */
+}
+
+.middle .doctor-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.middle .doctor-info .left-side {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.middle .doctor-info .left-side .image {
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+}
+
+.middle .doctor-info .left-side .image img {
+  width: 100%;
+  height: 100%;
+}
+
+.middle .doctor-info .left-side p {
+  color: var(--Others-Abbey-2, #5d656d);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.middle .doctor-info a {
+  color: var(--Main-1-Col-5, #00ae9a);
+  text-align: right;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124%; /* 17.36px */
+}
+
+.middle .prescription-container {
+  background-color: #fff;
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  border-radius: 13px;
+}
+
+.middle .prescription-container .prescribes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.middle .prescription-container .date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.middle .prescription-container .date p {
+  color: var(--Text-light, #c3c3c3);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+.middle .prescription-container .date span p {
+  color: var(--Main-1-Col-5, #00ae9a);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 150% */
+}
+
+@media (max-width: 768px) {
+  .pharmacy {
+    display: grid;
+    grid-template-columns: calc(100%);
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-gap: 20px;
+  }
+
+  .pharmacy .pharmacy-outlet-list {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 12px;
+  }
+
+  .pharmacy .left .heading {
+    display: none;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: flex !important;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

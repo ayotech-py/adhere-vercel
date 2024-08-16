@@ -20,14 +20,14 @@
   padding: 0px 20px 20px 20px;
 }
 
-.home .home-user-name {
+.home-user-name {
   display: flex;
   align-items: center;
   gap: 6px;
   align-self: stretch;
 }
 
-.home .home-user-name p {
+.home-user-name p {
   color: #999;
   font-family: "Poppins";
   font-size: 16px;
@@ -38,7 +38,7 @@
   gap: 6px;
 }
 
-.home .home-user-name p span {
+.home-user-name p span {
   padding: 2.37px 10.201px;
   justify-content: center;
   align-items: center;
@@ -76,11 +76,11 @@
   gap: 6px;
 }
 
-.home .home-search {
+.home-search {
   position: relative;
 }
 
-.home .home-search input {
+.home-search input {
   width: calc(100% - 65px);
   padding: 18px 30px 18px 34px;
   color: var(--Others-Abbey, #495057);
@@ -94,7 +94,7 @@
   border: none;
 }
 
-.home .home-search input::placeholder {
+.home-search input::placeholder {
   color: var(--Accent-colour-Grey, var(--Nuetral-blue, #c3c9d0));
   font-family: Poppins;
   font-size: 14px;
@@ -103,13 +103,13 @@
   line-height: 16.8px; /* 120% */
 }
 
-.home .home-search .icon {
+.home-search .icon {
   position: absolute;
   top: 20px;
   left: 14px;
 }
 
-.home .service-list {
+.service-list {
   display: grid;
   grid-template-columns: calc((100% - 48px) / 3) calc((100% - 48px) / 3) calc(
       (100% - 48px) / 3
@@ -118,7 +118,7 @@
   gap: 16px;
 }
 
-.home .service-list .service {
+.service-list .service {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +126,7 @@
   gap: 8px;
 }
 
-.home .service-list .service p {
+.service-list .service p {
   color: #495057;
   text-align: center;
   font-family: "Poppins", sans-serif;
@@ -363,6 +363,14 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.card-selected-bright {
+  background: #fff !important;
+}
+
+.card-selected-dark {
+  background: #00ae9a !important;
 }
 
 .appointment-info-card {

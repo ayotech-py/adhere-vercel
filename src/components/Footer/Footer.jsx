@@ -46,7 +46,7 @@ export const Footer = () => {
         <Link
           to={"/appointments"}
           className="nav-btn"
-          onClick={() => setActiveTab(1)}
+          onClick={() => setActiveTab(2)}
         >
           <ApptsIcon
             color={activeTab === 2 ? "#00AE9A" : "#9C9C9C"}
@@ -59,7 +59,7 @@ export const Footer = () => {
             Appts.
           </p>
         </Link>
-        <Link to={"doctor"} className="nav-btn" onClick={() => setActiveTab(1)}>
+        <Link to={"doctor"} className="nav-btn" onClick={() => setActiveTab(3)}>
           <PharmIcon
             color={activeTab === 3 ? "#00AE9A" : "#9C9C9C"}
             style={{ width: "20px", height: "20px" }}
