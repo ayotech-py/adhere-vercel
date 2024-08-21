@@ -17,6 +17,7 @@
 .top-navigation .nav-title {
   width: calc(100% - 25px);
   text-align: center;
+  margin-right: 25px;
 }
 
 .top-navigation .nav-title p {

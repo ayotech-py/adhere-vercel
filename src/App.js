@@ -10,6 +10,10 @@ import { DoctorFeedback } from "./pages/Doctor/DoctorFeedback";
 import { Appts } from "./pages/Appts/Appts";
 import { Pharmacy } from "./pages/Pharmacy/Pharmacy";
 import { ViewPrescriptions } from "./pages/Pharmacy/ViewPrescriptions";
+import { Orders } from "./pages/Pharmacy/Orders";
+import { ComfirmationScreen } from "./components/ComfirmationScreen";
+import { Lab } from "./pages/Lab/Lab";
+import { ViewLab } from "./pages/Lab/ViewLab";
 
 function App() {
   return (
@@ -45,6 +49,18 @@ function App() {
           <Route
             path="view-prescriptions"
             element={<Layout children={<ViewPrescriptions />} />}
+          />
+          <Route path="orders" element={<Layout children={<Orders />} />} />
+          <Route
+            path="success"
+            element={<Layout children={<ComfirmationScreen />} />}
+          />
+        </Route>
+        <Route path="/lab/">
+          <Route path="" element={<Layout children={<Lab />} />} />
+          <Route
+            path="lab-investigations"
+            element={<Layout children={<ViewLab />} />}
           />
         </Route>
       </Routes>

@@ -1,19 +1,18 @@
 import React from "react";
 import Header from "./Header/Header";
 import { Footer } from "./Footer/Footer";
+import "./Layout.css";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="layout">
       <header
         className="layout-header"
         style={{ position: "fixed", width: "100%", zIndex: 10 }}
       >
         <Header />
       </header>
-      <main style={{ paddingTop: "100px", marginBottom: "70px" }}>
-        {children}
-      </main>
+      <main>{children}</main>
       <footer>
         <Footer />
       </footer>

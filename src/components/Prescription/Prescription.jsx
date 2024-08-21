@@ -3,27 +3,30 @@ import "./Prescription.css";
 import doctorImage from "../../images/badge-image.jpg";
 import { Link } from "react-router-dom";
 
-export const Prescription = () => {
+export const Prescription = ({
+  medication,
+  dosage,
+  date,
+  instruction,
+  note,
+}) => {
   return (
     <div className="prescription-details" style={{ display: "flex" }}>
       <div className="appt-hightlight">
         <p>
-          <span>Medication Name:</span> Pediatrician
+          <span>Medication Name:</span> {medication}
         </p>
         <p>
-          <span>Dosage:</span> July 21, 2024
+          <span>Dosage:</span> {dosage}
         </p>
         <p>
-          <span>Prescribed On:</span> 10:00AM
+          <span>Prescribed On:</span> {date}
         </p>
         <p>
-          <span>Prescribed On:</span> Video Call
+          <span>Instructions:</span> {instruction}
         </p>
         <p>
-          <span>Instructions:</span> Video Call
-        </p>
-        <p>
-          <span>Notes:</span> Video Call
+          <span>Notes:</span> {note}
         </p>
       </div>
     </div>

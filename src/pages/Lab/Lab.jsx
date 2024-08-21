@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Pharmacy.css";
 import { Card } from "../../components/Card/Card";
 import { Link } from "react-router-dom";
 import { GridCard } from "../../components/GridCard/GridCard";
@@ -35,7 +34,7 @@ import otherIcon from "../../images/others.png";
 import searchIcon from "../../images/home-search.png";
 import { specialCharMap } from "@testing-library/user-event/dist/keyboard";
 
-export const Pharmacy = () => {
+export const Lab = () => {
   const images = [tip1Image, tip2Image, tip3Image, tip4Image];
   const [searchView, setSearchView] = useState(false);
   const gridView = true;
@@ -47,40 +46,40 @@ export const Pharmacy = () => {
   };
 
   const pharmList = [
-    { label: "View My Drug Prescriptions", icon: RecordIcon },
-    { label: "View My Drug Prescriptions", icon: SettingIcon },
+    { label: "View my lab investigations", icon: RecordIcon },
+    { label: "View verified laboratories", icon: SettingIcon },
     {
-      label: "Get your over the counter medications in pharmacies near you",
+      label: "Book a lab investigation in a laboratory near you",
       icon: DrugsIcon,
     },
-    { label: "Consult a pharmacist", icon: MessageSolidIcon },
-    { label: "Call a pharmacy", icon: CallSolidIcon },
+    { label: "Consult a lab scientist", icon: MessageSolidIcon },
+    { label: "Call a laboratory", icon: CallSolidIcon },
   ];
   const searchResultList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const specialistList = [
     {
       icon: dentistIcon,
-      label: "Dentist",
+      label: "Blood Test",
     },
     {
       icon: dermaIcon,
-      label: "Dermatologist",
+      label: "Urinalysis",
     },
     {
       icon: cardioIcon,
-      label: "Cardiologist",
+      label: "Genetic Testing",
     },
     {
       icon: neuroIcon,
-      label: "Neurologist",
+      label: "Diagnostic Imaging Test",
     },
     {
       icon: psychiIcon,
-      label: "Psychiatrists",
+      label: "Anemia Test",
     },
     {
       icon: surgeonIcon,
-      label: "Surgeon",
+      label: "Drug Test",
     },
     {
       icon: otherIcon,
@@ -102,14 +101,14 @@ export const Pharmacy = () => {
     <div className="pharmacy">
       <div className="left">
         <div className="heading">
-          <h3>Pharmacy</h3>
+          <h3>Laboratory</h3>
         </div>
         <div className="pharmacy-list desktop">
           {pharmList.map((obj, index) => (
             <Card
               label={obj.label}
               icon={<obj.icon color="#E2E6E9" />}
-              link={"/pharmacy/view-prescriptions"}
+              link={"/lab/lab-investigations"}
             />
           ))}
         </div>
@@ -137,7 +136,7 @@ export const Pharmacy = () => {
             {pharmList.map((obj, index) => (
               <Card
                 label={obj.label}
-                link={"/pharmacy/view-prescriptions"}
+                link={"/lab/lab-investigations"}
                 icon={<obj.icon color="#E2E6E9" />}
               />
             ))}
@@ -145,13 +144,13 @@ export const Pharmacy = () => {
         </section>
         <section className="pharmacy-outlets">
           <div className="title">
-            <h3>Verified Pharmacies</h3>
+            <h3>Verified Laboratories</h3>
             <p>See all</p>
           </div>
           <div className="pharmacy-outlet-list">
             {specialistList.map((obj, index) => (
               <GridCard
-                name={"RootCare Pharmatical"}
+                name={"RootCare Laboratory"}
                 image={pharmaIcon}
                 address={"89 Obio imo str., just by Kilimanjaro Uyo"}
               />
@@ -224,7 +223,7 @@ export const Pharmacy = () => {
         >
           <div className="specialist">
             <div className="title">
-              <h3>Shop by category</h3>
+              <h3>Browse by category</h3>
               <p>See all</p>
             </div>
             <div className="service-list">

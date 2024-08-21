@@ -98,6 +98,9 @@ export const ViewPrescriptions = () => {
 
   return (
     <div className="pharmacy">
+      <div className="heading mobile">
+        <TopNavigation link={"/pharmacy"} title="My Prescriptions" />
+      </div>
       <div className="left">
         <div className="heading">
           <TopNavigation link={"/pharmacy"} title="My Prescriptions" />
@@ -126,9 +129,17 @@ export const ViewPrescriptions = () => {
                 </div>
                 <p>Dr. Sandra Kharma</p>
               </div>
-              <Link>View pharmacy</Link>
+              <Link to={"/pharmacy/orders"}>View pharmacy</Link>
             </div>
-            <Prescription />
+            <Prescription
+              medication={"Lisinopril"}
+              dosage={"10 mg once daily"}
+              date={"June 15, 2024"}
+              instruction={
+                "Take one tablet by mouth each morning with or without food"
+              }
+              note={"Monitor blood pressure regularly."}
+            />
             <div className="date">
               <p>15/06/24 • 03:43pm</p>
               <span>
@@ -144,9 +155,17 @@ export const ViewPrescriptions = () => {
                 </div>
                 <p>Dr. Sandra Kharma</p>
               </div>
-              <Link>View pharmacy</Link>
+              <Link to={"/pharmacy/orders"}>View pharmacy</Link>
             </div>
-            <Prescription />
+            <Prescription
+              medication={"Lisinopril"}
+              dosage={"10 mg once daily"}
+              date={"June 15, 2024"}
+              instruction={
+                "Take one tablet by mouth each morning with or without food"
+              }
+              note={"Monitor blood pressure regularly."}
+            />
             <div className="date">
               <p>15/06/24 • 03:43pm</p>
               <span>

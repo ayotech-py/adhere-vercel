@@ -1,0 +1,118 @@
+.pharmacy .middle .middle-profile {
+  background: #fff;
+  padding: 18px 20px 18px 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pharmacy .middle .middle-profile .middle-result-card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 13px;
+}
+
+.view-profile-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.view-profile-button .left-button {
+  width: 120px;
+}
+
+.middle-profile .prescription-order h3 {
+  color: #707070;
+  font-family: Poppins, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 21.6px */
+}
+
+.middle-profile .prescription-order,
+.middle-profile .prescription-order .prescribed-drugs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.middle-profile .prescription-order .prescribed-drugs .drug {
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-profile .prescription-order p {
+  color: var(--Text-normal, #757575);
+  font-family: Poppins;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 166.667% */
+}
+
+.middle-profile .prescription-order a {
+  color: var(--Main-1-Col-5, #00ae9a);
+  text-align: left;
+  font-family: Poppins, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 124%;
+}
+
+.view-middle-button {
+  display: flex;
+  justify-content: center;
+}
+
+.view-middle-button .middle-button {
+  width: 50%;
+}
+
+.middle-profile .prescribed-drugs select {
+  display: flex;
+  height: 52.26px;
+  padding: 13.63px 12.59px 13.63px 12.593px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 6.297px;
+  border: 0.63px solid var(--Light-Light-1, #e2e6e9);
+  background: #fafafa;
+  color: var(--Text-normal, #757575);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92.7%; /* 14.832px */
+}
+
+.middle-profile .prescribed-drugs input {
+  display: flex;
+  height: 52.26px;
+  padding: 0px 12.59px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border-radius: 6.297px;
+  border: 0.63px solid var(--Light-Light-1, #e2e6e9);
+  background: #fafafa;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92.7%; /* 13.905px */
+  color: var(--Text-normal, #757575);
+}
+
+.middle-profile .prescribed-drugs input::placeholder {
+  color: var(--Accent-colour-Grey, var(--Nuetral-blue, #c3c9d0));
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 92.7%; /* 13.905px */
+}

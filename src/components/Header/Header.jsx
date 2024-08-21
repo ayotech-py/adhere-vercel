@@ -87,11 +87,7 @@ export default function Header() {
               Pharm.
             </p>
           </Link>
-          <Link
-            to={"doctor"}
-            className="nav-btn"
-            onClick={() => setActiveTab(1)}
-          >
+          <Link to={"/lab"} className="nav-btn" onClick={() => setActiveTab(4)}>
             <ListIcon
               color={activeTab === 4 ? "#00AE9A" : "#9C9C9C"}
               style={{ width: "20px", height: "20px" }}
